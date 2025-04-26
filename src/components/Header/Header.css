@@ -1,0 +1,108 @@
+.header {
+	background-color: #141414;
+	color: white;
+	padding: 1rem 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.logo {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.logo span {
+  background-color: #a98b07;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu-checkbox {
+	display: none;
+}
+
+.menu-toggle-label {
+	display: none;
+	background: none;
+	border: none;
+	color: white;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.menu {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu li {
+	margin: 0 1rem;
+}
+
+.menu a {
+	color: white;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	transition: background-color 0.3s;
+}
+
+.menu a:hover {
+	background-color: #555;
+	border-radius: 4px;
+}
+
+
+@media (max-width: 768px) {
+	nav {
+		flex-wrap: wrap;
+	}
+
+	.menu {
+		display: flex;
+		flex-basis: 100%;
+		flex-direction: column;
+		background-color: #333;
+		overflow: hidden;
+		max-height: 0;
+		transition: max-height 0.3s ease;
+	}
+
+	.menu-checkbox:checked+.menu-toggle-label+.menu {
+		margin-top: 5px;
+		border-top: 1px solid #555;
+		max-height: 300px;
+	}
+
+	.menu li {
+		margin: 8px 0;
+	}
+
+	.menu a {
+		display:inline-block;
+		padding: 0.5rem 1rem 0.5rem 0;	
+	}
+	
+	.menu a:hover {
+		padding: 0.5rem 1rem;
+		background-color: #555;
+		transform: translateX(10px);
+		transition: transform 0.3s, color 0.3s, padding 0.3s;
+	}
+
+	.menu-toggle-label {
+		display: block;
+	}
+}

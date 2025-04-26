@@ -1,0 +1,35 @@
+
+.about-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.about-image {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 24px;
+  border-radius: 50%;
+}
+
+.about-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.about-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about-link {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
