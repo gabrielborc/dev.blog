@@ -1,7 +1,6 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import './about.css';
 
-
 export default function About() {
   return (
     <section className='about-container'>

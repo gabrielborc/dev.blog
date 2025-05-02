@@ -12,6 +12,6 @@ export const articles: Article[] = [
     title: 'Understanding React Hooks',
     description: 'Learn the basics of React Hooks and how they can simplify your code.',
     imageUrl: 'https://www.patterns.dev/img/reactjs/react-logo@3x.svg',
-    link: '#',
+    link: '/articles/pt-BR/artigo-exemplo',
   }
 ];
